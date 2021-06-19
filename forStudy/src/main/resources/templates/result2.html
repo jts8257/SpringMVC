@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+  <style>
+    body {
+      background-color: azure;
+    }
+  </style>
+</head>
+<body>
+<div id = "msg" th:text="${msg}"/><br>
+<div id = "main" th:if="${status} == '1'">
+  <th:block th:each="x : ${#numbers.sequence(1,9)}">
+    <span th:text="${num}"/> x
+    <span th:text="${x}"/> =
+    <span th:text="*{numMap.get('key1')}"/> <br>
+  </th:block>
+</div>
+<button type="button"> <a href="http://localhost:8080/">put number</a> </button>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <style>
+        body {
+            background-color: azure;
+        }
+    </style>
+
+</head>
+<body>
+<div id = "msg" th:text="${msg}"/><br>
+<div id = "main" th:if="${status} == '1'">
+    <div>
+        <p><span th:text="${num}"/> * 1 = <span th:text="*{numMap.get('key1')}"/></p>
+        <p><span th:text="${num}"/> * 2 = <span th:text="*{numMap.get('key2')}"/></p>
+        <p><span th:text="${num}"/> * 3 = <span th:text="*{numMap.get('key3')}"/></p>
+        <p><span th:text="${num}"/> * 4 = <span th:text="*{numMap.get('key4')}"/></p>
+        <p><span th:text="${num}"/> * 5 = <span th:text="*{numMap.get('key5')}"/></p>
+        <p><span th:text="${num}"/> * 6 = <span th:text="*{numMap.get('key6')}"/></p>
+        <p><span th:text="${num}"/> * 7 = <span th:text="*{numMap.get('key7')}"/></p>
+        <p><span th:text="${num}"/> * 8 = <span th:text="*{numMap.get('key8')}"/></p>
+        <p><span th:text="${num}"/> * 9 = <span th:text="*{numMap.get('key9')}"/></p>
+    </div>
+</div>
+<button type="button"> <a href="http://localhost:8080/">put number</a> </button>
+
+</body>
+</html>
