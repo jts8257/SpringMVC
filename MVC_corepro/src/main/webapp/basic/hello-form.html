@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<!-- action이 form 데이터가 어디로 갈것인지를 나타넴
+ 그러면 request-param 페이지가 호출되고, 그에 맞게 서블렛도 돌아감 -->
+<form action="/request-param" method="post">
+  username: <input type="text" name="username" />
+  age: <input type="text" name="age" />
+  <button type="submit">전송</button>
+</form>
+</body>
+</html>
